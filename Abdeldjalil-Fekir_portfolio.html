@@ -3,18 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abdeldjalil - Portfolio</title>
+    <title>Abdeldjalil Fekir - Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
         body {
             font-family: 'Inter', sans-serif;
         }
+        .project-img {
+            transition: transform 0.4s ease;
+        }
+        .group:hover .project-img {
+            transform: scale(1.05);
+        }
     </style>
 </head>
 <body class="bg-white">
     <!-- Navigation -->
-    <nav class="fixed top-0 w-full bg-white z-50 border-b border-gray-100">
+    <nav class="fixed top-0 w-full bg-white z-50 border-b border-gray-100 shadow-sm">
         <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
             <a href="index.html" class="text-xl font-semibold">Portfolio</a>
             <div class="flex gap-8">
@@ -26,23 +32,24 @@
 
     <!-- Profile Header -->
     <section class="pt-32 pb-12 px-6 max-w-7xl mx-auto">
-        <h1 class="text-5xl md:text-6xl font-medium mb-16">Ala Eddine</h1>
+        <h1 class="text-5xl md:text-6xl font-medium mb-16">Abdeldjalil Fekir</h1>
         
         <!-- About Section -->
         <div class="mb-20">
             <h2 class="text-sm font-medium text-gray-900 mb-4">About</h2>
             <p class="text-lg text-gray-600 max-w-2xl leading-relaxed">
-                See how we've turned ideas into reality. Dive into the stories of 
-                <span class="text-gray-400">successful product designs that make a difference.</span>
+                Passionate about intelligent systems, data-driven problem solving, and impactful digital experiences. 
+                I enjoy creating solutions that combine creativity, functionality, and efficiency.
             </p>
         </div>
-        <a href="">
-        <button class="bg-black text-white px-8 py-3 rounded-full hover:bg-gray-800 transition">
-            Github Profile
-            <svg class="w-4 h-4 inline-block ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 17L17 7M17 7H7M17 7v10"/>
-            </svg>
-        </button>
+
+        <a href="https://github.com/AbdeldjalilFekir" target="_blank">
+            <button class="bg-black text-white px-8 py-3 rounded-full hover:bg-gray-800 transition">
+                Github Profile
+                <svg class="w-4 h-4 inline-block ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 17L17 7M17 7H7M17 7v10"/>
+                </svg>
+            </button>
         </a>
     </section>
 
@@ -53,44 +60,46 @@
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
             <!-- Project 1 -->
             <div class="group cursor-pointer">
-                <div class="bg-gray-200 rounded-3xl h-72 mb-4 overflow-hidden transition-transform group-hover:scale-[1.02]"></div>
-                <p class="text-sm text-gray-500 mb-1">Project name</p>
-                <h3 class="text-lg font-medium">Small desc about app</h3>
+                <div class="rounded-3xl h-72 mb-4 overflow-hidden bg-gray-200">
+                    <img src="https://media.istockphoto.com/id/2221140045/photo/100-vegan-certified-label.jpg?s=2048x2048&w=is&k=20&c=qb90jzQZQoeFw4f_jRR0fg3GJwzrEvAi_mV07LIP8xE=" alt="Smart Farming" class="project-img w-full h-full object-cover">
+                </div>
+                <p class="text-sm text-gray-500 mb-1">Smart Farming Optimization</p>
+                <h3 class="text-lg font-medium">
+                    Developed a system to optimize crop resources and maximize agricultural productivity through intelligent planning.
+                </h3>
             </div>
 
             <!-- Project 2 -->
             <div class="group cursor-pointer">
-                <div class="bg-gray-200 rounded-3xl h-72 mb-4 overflow-hidden transition-transform group-hover:scale-[1.02]"></div>
-                <p class="text-sm text-gray-500 mb-1">Project name</p>
-                <h3 class="text-lg font-medium">Small desc about app</h3>
+                <div class="rounded-3xl h-72 mb-4 overflow-hidden bg-gray-200">
+                    <img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?auto=format&fit=crop&w=900&q=60" alt="Medical System" class="project-img w-full h-full object-cover">
+                </div>
+                <p class="text-sm text-gray-500 mb-1">Medical Appointment Platform</p>
+                <h3 class="text-lg font-medium">
+                    Designed a platform connecting patients and hospitals, making it easier to manage appointments and access health records.
+                </h3>
             </div>
 
             <!-- Project 3 -->
             <div class="group cursor-pointer">
-                <div class="bg-gray-200 rounded-3xl h-72 mb-4 overflow-hidden transition-transform group-hover:scale-[1.02]"></div>
-                <p class="text-sm text-gray-500 mb-1">Project name</p>
-                <h3 class="text-lg font-medium">Small desc about app</h3>
+                <div class="rounded-3xl h-72 mb-4 overflow-hidden bg-gray-200">
+                    <img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?auto=format&fit=crop&w=900&q=60" alt="E-commerce Website" class="project-img w-full h-full object-cover">
+                </div>
+                <p class="text-sm text-gray-500 mb-1">E-commerce Website</p>
+                <h3 class="text-lg font-medium">
+                    Built an online shopping platform with a focus on simplicity, smooth navigation, and modern design aesthetics.
+                </h3>
             </div>
 
             <!-- Project 4 -->
             <div class="group cursor-pointer">
-                <div class="bg-gray-200 rounded-3xl h-72 mb-4 overflow-hidden transition-transform group-hover:scale-[1.02]"></div>
-                <p class="text-sm text-gray-500 mb-1">Project name</p>
-                <h3 class="text-lg font-medium">Small desc about app</h3>
-            </div>
-
-            <!-- Project 5 -->
-            <div class="group cursor-pointer">
-                <div class="bg-gray-200 rounded-3xl h-72 mb-4 overflow-hidden transition-transform group-hover:scale-[1.02]"></div>
-                <p class="text-sm text-gray-500 mb-1">Project name</p>
-                <h3 class="text-lg font-medium">Small desc about app</h3>
-            </div>
-
-            <!-- Project 6 -->
-            <div class="group cursor-pointer">
-                <div class="bg-gray-200 rounded-3xl h-72 mb-4 overflow-hidden transition-transform group-hover:scale-[1.02]"></div>
-                <p class="text-sm text-gray-500 mb-1">Project name</p>
-                <h3 class="text-lg font-medium">Small desc about app</h3>
+                <div class="rounded-3xl h-72 mb-4 overflow-hidden bg-gray-200">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=900&q=60" alt="Dashboard" class="project-img w-full h-full object-cover">
+                </div>
+                <p class="text-sm text-gray-500 mb-1">Interactive Dashboard</p>
+                <h3 class="text-lg font-medium">
+                    Created a data visualization dashboard that presents insights clearly and interactively for better decision-making.
+                </h3>
             </div>
         </div>
     </section>
@@ -101,16 +110,19 @@
         
         <div class="space-y-6 max-w-md">
             <div class="border-b border-gray-200 pb-4">
-                <h3 class="text-2xl font-medium">Next Js</h3>
+                <h3 class="text-2xl font-medium">Next.js</h3>
             </div>
             <div class="border-b border-gray-200 pb-4">
-                <h3 class="text-2xl font-medium">SupaBase</h3>
+                <h3 class="text-2xl font-medium">React</h3>
             </div>
             <div class="border-b border-gray-200 pb-4">
-                <h3 class="text-2xl font-medium">Figma</h3>
+                <h3 class="text-2xl font-medium">HTML & CSS</h3>
             </div>
             <div class="border-b border-gray-200 pb-4">
                 <h3 class="text-2xl font-medium">Flask</h3>
+            </div>
+            <div class="border-b border-gray-200 pb-4">
+                <h3 class="text-2xl font-medium">Figma</h3>
             </div>
         </div>
     </section>
